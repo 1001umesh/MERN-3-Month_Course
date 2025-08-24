@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        button{
+            width:20%;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form action="">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="John Doe" required> 
+                <label for="email" style="margin-left: 500px;">Email:</label>
+                <input type="email" name="" id="email" placeholder="john@gmail.com">  
+            </div>
+            <br>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" > 
+                <label for="age" style="margin-left: 500px;">Age:</label>
+                <input type="number" name="" id="age" placeholder="john@gmail.com" required>  
+            </div>
+            <br>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone"  nam="" placeholder="123-456-7890">
+                 <label for="date of birth" style="margin-left: 520px;">Date Of Birth:</label>
+                 <input type="date" name="" id="date of birth">  
+            </div>
+            <br>
+            <div>
+                <label for="preffered time">Preferred Time:</label>
+                <input type="time" id="preffered time" name="">
+                 <label for="favourite color" style="margin-left: 540px;">Favourite Color:</label>
+                 <input type="color" name="" id="favourite color" >  
+            </div>
+            <br>
+
+            <div>
+                <label for="Satifaction level">Satifaction Level(1-10)</label>
+                <input type="range" id="Satifaction level" name="">
+                 <label for="upload resume" style="margin-left: 450px;">Upload Resum :</label>
+                 <input type="file" name="" id="upload resume" >  
+            </div>
+            <br>
+
+            <div>
+                <label for="skill">Skill:</label>
+                <input type="checkbox" name="" id="skill" value="HTLM"> HTLM
+                <input type="checkbox" name="" id="skill" value="CSS"> CSS
+                <input type="checkbox" name="" id="skill" value="JavaScript"> JavaScript
+
+                <label for="gender" style="margin-left: 480px;">Gender:</label>
+                <input type="radio" name="gender" id="Male " value="Male">Male  
+                <input type="radio" name="gender" id="Female " value="Female">Female  
+            </div>
+            <br>
+
+            <div>
+                <label for="country">Country:</label>
+                <select for="country" name="" id="country">
+                    <option value="">Select Country</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="USA">USA</option>
+                </select>
+                <label for="about you" style="margin-left: 570px;">About You:</label>
+               <textarea name="" id="about you" cols="5" rows="5" placeholder="Tell us about yourself....."></textarea>
+            </div>
+            <br>
+
+            <div>
+                <button type="submit" style="margin-left: 100px;">Submit</button>
+                <button type="reset" style="margin-left: 800px;">Reset</button>
+            </div>
+        </form>
+    </fieldset>
+    <br>
+    <hr>
+    <br>
+     <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">SINO.</th>
+                <th rowspan="2">Course Code</th>
+                <th rowspan="2">Course Title</th>
+                <th rowspan="2">Type</th>
+                <th colspan="2">CIA</th>
+                <th colspan="2">ESE</th>
+                <th rowspan="2">Status</th>
+               
+            </tr>
+            <tr>
+                <th>Max Marks</th>
+                <th>Marks Scored</th>
+                <th>Max Marks</th>
+                <th>Marks Scored</th>
+            </tr>
+            
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>CACS101</td>
+                <td>C Programming</td>
+                <td>T</td>
+                <td>60</td>
+                <td>30</td>
+                <td>100</td>
+                <td>70</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CACS102</td>
+                <td>Math I</td>
+                <td>T</td>
+                <td>100</td>
+                <td>50</td>
+                <td>100</td>
+                <td>45</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CACS103</td>
+                <td>C English</td>
+                <td>T</td>
+                <td>60</td>
+                <td>45</td>
+                <td>60</td>
+                <td>55</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>CACS104</td>
+                <td>Core Java Programming</td>
+                <td>T</td>
+                <td>60</td>
+                <td>20</td>
+                <td>100</td>
+                <td>30</td>
+                <td>Fail</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>CACS105</td>
+                <td>Computer Network</td>
+                <td>T</td>
+                <td>60</td>
+                <td>35</td>
+                <td>100</td>
+                <td>65</td>
+                <td>Pass</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
