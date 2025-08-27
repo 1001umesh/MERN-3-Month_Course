@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px;
+
+        }
+        .container{
+            max-width: 900px;
+            min-height: 400px;
+            background-color: rgb(205, 161, 247);
+            border: 1px solid black;
+            display: flex;
+            justify-content:space-between;
+            gap: 10px;
+            /* flex-flow: row wrap; */
+            /* align-items: center; */
+
+        }
+        .box{
+            min-width: 100px;
+            min-height: 100px;
+            background-color: rgb(195, 223, 236);
+            color:black;
+            font-size: 18px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: safe;
+            
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">Home</div>
+    <div class="box">Product</div>
+    <div class="box">Service</div>
+    <div class="box">Pricing</div>
+    <div class="box">About Us</div>
+    <div class="box">Contact US</div>
+    </div>
+    
+</body>
+</html>
