@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        .box{
+            max-width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 10px yellow;
+
+        }
+        .text{
+            font-size: large;
+            color: white;
+            font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 4px 2px gray;
+            &::first-letter{
+                color:black;
+                
+            }
+
+
+        }
+        .box1{
+            width: 400px;
+            height: 200px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 50px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color: rgb(236, 199, 199);
+            }
+        }
+        /* .box1:hover{
+            background-color: aqua;
+        } */
+         input{
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            &:focus{
+                outline-color: red;
+            }
+         }
+         button{
+            padding: 10px 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            &:focus{
+                background-color: green;
+            }
+
+         }
+         a:active{
+            color: yellow;
+         }
+         a:visited{
+            color: green;
+         }
+       
+         li::before{
+            content: "bf  ";
+         }
+         li::after{
+            content: " af";
+         }
+         .first-line{
+            color: blueviolet;
+            font-weight: 600;
+            word-spacing: 2px;
+             &::first-line{
+            background-color: rgb(176, 197, 176);
+         }
+         &::selection{
+            background-color: yellow;
+         }
+        
+         }
+          ::marker{
+            color: red;
+         }
+         /* #first-line{
+            color: blue;
+         } */
+          .transform-demo{
+            height: 100px;
+            max-width: 100%;
+            background-color: blueviolet;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 2px;
+            &:hover{
+                transform: scale(2);
+                /* transform: rotate(260deg); */
+                /* transform: translatex(100px);
+                transform: translatey(100px); */
+                /* transform: translate(100px); */    
+            }
+            /* transition-property: transform;
+            transition-duration: 1s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in-out; */
+            transition: transform 2s ease-in-out 2s;
+          }
+          table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          th,td{
+            padding: 10px;
+          }
+          td{
+            background-color: red;
+           
+          }
+
+    </style>
+</head>
+<body>
+    <div class="transform-demo">
+
+    </div>
+    <div class="box">
+        <p class="text">Hello World</p>
+    </div>
+    <div class="box1">
+    <label for="name" id="name">Name:</label>
+        <input type="text">
+    </div>
+    <button>Submit</button>
+    <a href="https://www.google.com/">Google</a>
+    <ul class="list">
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+    <p class="first-line" id="first-line">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, id? Voluptate asperiores exercitationem sed temporibus non debitis officia accusamus at. Sit eligendi voluptas mollitia fugit ex minima nesciunt dolores! Pariatur!10</p>
+    <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Umesh Magar</td>
+                    <td>22</td>
+                    <td>Jorpati</td>
+                    </tr>
+                    </tbody>
+            </table>
+</body>
+</html>
